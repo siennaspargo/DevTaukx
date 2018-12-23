@@ -1,0 +1,54 @@
+
+<header id="header">
+  <h1>Supervisor View</h1>
+  <nav>
+    <!-- Log-In, Cart, About us -->
+    <div class="main-header-container6">
+      <span>
+        <a href="/logout">
+          <p id="main-header-five">LOG-OUT</p>
+        </a>
+      </span>
+    </div>
+    <div class="main-header-container7">
+      <span>
+        <a href="/productview">
+          <p id="main-header-six">PRODUCT</p>
+        </a>
+      </span>
+    </div>
+
+  </nav>
+
+</header>
+<section id="content">
+<section id="searchlinks">
+
+<button class="searchlink" id="supadd" type="button" onclick="window.location.href='/addprod'">Add Product</button>
+<button class="searchlink" id="suptesti" type="button" onclick="window.location.href='/supervisortestimonialview'">Testimonals</button>
+<button class="searchlink" id="suporders" type="button" onclick="window.location.href='/supervisorordersview'">Orders</button>
+
+
+
+</section>
+
+
+<div id="productdisplay">
+{{#each product}}
+<div class="productdiv">
+  
+<img class="productimg" src="{{img}}">
+  <h4 id="productname"><strong>{{name}}</strong></h4>
+   <p id="productprice">Price: {{price}}</p>
+  <p id="productdesigner"> Designer: {{designer}}</p>
+  <button class="updateprod" value={{id}}>Update product</button>
+  <button class="deleteprod" value={{id}}>Delete product</button>
+  <div class={{id}}></div>
+</div>
+    
+    
+  
+  {{/each}}
+
+  </div>
+  </section>

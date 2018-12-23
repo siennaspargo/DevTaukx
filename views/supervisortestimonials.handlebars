@@ -1,0 +1,18 @@
+<head>
+  <title>Name of our company/store</title>
+  <h2>Supervisor Testimonial View</h2>
+</head>
+
+    
+
+  {{#each testimonials}}
+
+    <p>
+        Id: {{id}}
+        {{review}} | {{author}} | {{city}}
+    </p>
+
+<button value="{{id}}" type="submit" class="deletetesti">Delete</button>
+   
+  {{/each}}
+
